@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/Cuchillo_token.png" width="125" height="125" />
-
+    <HeaderComponent />
+    <hr>
     <div class="wrapper">
-      <!--<HelloWorld msg="You did it!" />-->
-      cica fű
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
+    
   </header>
 
   <RouterView />
+
 </template>
 
 <style scoped>
